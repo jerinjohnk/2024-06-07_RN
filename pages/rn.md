@@ -74,8 +74,6 @@ Ok to proceed? (y) y
 ```shell
 Run instructions for iOS:
     • cd "/Users/jerin/rn/demo/rnWorkshop"
-    • npx react-native run-ios
-    or
     • npx react-native run-android
 ```
 </div>
@@ -106,7 +104,7 @@ React and React Native use **JSX,** a syntax that lets you write elements inside
 **State** is useful for handling data that changes over time or that comes from user interaction. State gives your components memory!
 
 <!--
-RN components equivalent Android vs iOS vs Web
+The core concepts behind React
 -->
 
 ---
@@ -118,9 +116,9 @@ transition: slide-left
 In Android and iOS development, a **view** is the basic building block of UI: a small rectangular element on the screen which can be used to display text, images, or respond to user input. Even the smallest visual elements of an app, like a line of text or a button, are kinds of views. Some kinds of views can contain other views. It’s views all the way down!
 
 <div class="flex justify-center items-center">
-<figure>
-  <img src="/diagram_ios-android-views.svg" width="400" alt="Diagram of Android and iOS app showing them both built on top of atomic elements called views." />
-</figure>
+  <figure>
+    <img src="/diagram_ios-android-views.svg" width="400" alt="Diagram of Android and iOS app showing them both built on top of atomic elements called views." />
+  </figure>
 </div>
 
 <!--
@@ -158,12 +156,11 @@ transition: slide-left
 ---
 
 <div grid="~ cols-5">
-<div class="col-span-1">
+  <div class="col-span-1">
+    <img src="/Demo1.png" width="400" alt="Demo1" />
+  </div>
 
-<img src="/Demo1.png" width="400" alt="Demo1" />
-
-</div>
-<div class="col-span-4" >
+  <div class="col-span-4" >
 
 ````md magic-move {lines: true}
 ```js {2|4-7|9}
@@ -202,7 +199,7 @@ function Demo1() {
     <Text>Demo1</Text>
     <Image
       source={{
-        uri: 'https://ddragon.leagueoflegends.com/cdn/9.1.1/img/profileicon/588.png',
+        uri: 'https://reactnative.dev/img/tiny_logo.png',
       }}
       style={{ width: 100, height: 100 }}
     />
@@ -223,7 +220,7 @@ function Demo1() {
       <Text>Demo1</Text>
       <Image
         source={{
-          uri: 'https://ddragon.leagueoflegends.com/cdn/9.1.1/img/profileicon/588.png',
+          uri: 'https://reactnative.dev/img/tiny_logo.png',
         }}
         style={{ width: 100, height: 100 }}
       />
@@ -242,11 +239,11 @@ import { Text, Image, View, SafeAreaView } from 'react-native';
 function Demo1() {
   return (
     <SafeAreaView>
-     <View style={{ backgroundColor: '#FF0' }}>
+      <View style={{ backgroundColor: '#FF0' }}>
         <Text>Demo1</Text>
         <Image
           source={{
-            uri: 'https://ddragon.leagueoflegends.com/cdn/9.1.1/img/profileicon/588.png',
+            uri: 'https://reactnative.dev/img/tiny_logo.png',
           }}
           style={{ width: 100, height: 100 }}
         />
@@ -257,7 +254,6 @@ function Demo1() {
 
 export default Demo1;
 ```
-
 ```js {21,29|22-24|8|25-28|14|*}
 // step 5 Fix:- Inline styling
 import React from 'react';
@@ -270,7 +266,7 @@ function Demo1() {
         <Text>Demo1</Text>
         <Image
           source={{
-            uri: 'https://ddragon.leagueoflegends.com/cdn/9.1.1/img/profileicon/588.png',
+            uri: 'https://reactnative.dev/img/tiny_logo.png',
           }}
           style={styles.image}
         />
@@ -293,7 +289,7 @@ export default Demo1;
 ```
 ````
 
-</div>
+  </div>
 </div>
 <!--
 Here is another comment.

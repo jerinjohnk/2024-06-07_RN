@@ -51,7 +51,7 @@ import React from 'react';
 import {Text, StyleSheet} from 'react-native';
 
 const TextDemo = () => {
-  const titleText = "Bird's Nest";
+  const titleText = 'Hello World';
 
   return <Text style={styles.titleText}>{titleText}</Text>;
 };
@@ -120,11 +120,8 @@ Component for inputting text via a keyboard. Props provide configurability for s
 You can also subscribe to the `onChangeText`, `onSubmitEditing` and `onFocus` events to read the user input.
 
 ```js
-import React from 'react';
-import {StyleSheet, TextInput} from 'react-native';
-
 export const TextInputDemo = () => {
-  const [text, onChangeText] = React.useState('Useless Text');
+  const [text, onChangeText] = React.useState('Placeholder Text');
 
   return (
     <TextInput style={styles.input} onChangeText={onChangeText} value={text} />
@@ -134,6 +131,9 @@ export const TextInputDemo = () => {
 const styles = StyleSheet.create({
   input: {
     height: 40,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
   },
 });
 ```
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
 <br>
 
 <!--
-For network and data images, you will need to manually specify the dimensions of your image!
+A foundational component for inputting text into the app via a keyboard.
 -->
 
 ---
@@ -179,5 +179,52 @@ export default ScrollViewDemo;
 <br>
 
 <!--
-For network and data images, you will need to manually specify the dimensions of your image!
+Component that wraps platform ScrollView while providing integration with touch locking "responder" system.
 -->
+
+---
+transition: slide-left
+---
+
+## StyleSheet
+
+A StyleSheet is an abstraction similar to CSS StyleSheets
+
+- By moving styles away from the render function, you're making the code easier to understand.
+- Naming the styles is a good way to add meaning to the low level components in the render function.
+
+<br>
+
+```js
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: 24,
+    backgroundColor: '#eaeaea',
+  },
+  title: {
+    marginTop: 16,
+    paddingVertical: 8,
+    borderWidth: 4,
+    borderColor: '#20232a',
+    borderRadius: 6,
+    color: '#20232a',
+    textAlign: 'center',
+    fontSize: 30,
+    fontWeight: 'bold',
+  },
+});
+
+```
+
+<br>
+
+<!--
+Component that wraps platform ScrollView while providing integration with touch locking "responder" system.
+-->
+
+---
+transition: slide-left
+src: ./userInterfaces.md
+layout: center
+---

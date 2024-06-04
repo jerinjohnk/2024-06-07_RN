@@ -27,8 +27,8 @@ hideInToc: true
 Learn to build mobile application using react native.
 
 <div class="abs-br m-6 flex gap-2">
-<span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer"
-hover="bg-white bg-opacity-10">
+  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer"
+    hover="bg-white bg-opacity-10">
     Speakers <carbon:bullhorn class="inline"/>
   </span>
  <span class="px-2 py-1 rounded">
@@ -54,7 +54,9 @@ hideInToc: true
 
 # Table of contents
 
-<Toc minDepth="1" maxDepth="2"></Toc>
+<Transform :scale="0.8">
+  <Toc minDepth="1" maxDepth="2"></Toc>
+</Transform>
 
 <!--
 Table of contents
@@ -70,7 +72,6 @@ hideInToc: true
 # Jerin John K
 <br>
 
-<!-- <div v-click.hide="1"> -->
 <div v-click.hide="1">
   I started as a C# developer working on Windows Apps while dabbling in
   Xamarin.<br>

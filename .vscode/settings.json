@@ -1,6 +1,7 @@
 {
   "cSpell.words": [
     "configurability",
+    "Flatlist",
     "flexbox",
     "iconoir",
     "Jerin",
@@ -10,7 +11,8 @@
     "Shailesh",
     "shiki",
     "slidev",
-    "unocss"
+    "unocss",
+    "viewability"
   ],
   "gutterpreview.sourceFolder": "public"
 }
