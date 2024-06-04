@@ -14,8 +14,6 @@ transition: slide-left
 A basic button component that should render nicely on any platform.
 Supports a minimal level of customization.
 
-You can build your own button using<span v-mark.highlight.red="1"> Pressable </span>
-
 </span>
 <br>
 
@@ -26,6 +24,21 @@ You can build your own button using<span v-mark.highlight.red="1"> Pressable </s
   color="#841584"
   accessibilityLabel="Learn more about this purple button"
 />
+```
+
+<br>
+
+<br>
+<span>
+You can build your own button using<span v-mark.highlight.red="1"> Pressable </span>
+
+</span>
+<br>
+
+```js
+<Pressable onPress={onPressFunction}>
+  <Text>I'm pressable!</Text>
+</Pressable>
 ```
 
 <br>
