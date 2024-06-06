@@ -1,3 +1,7 @@
+---
+transition: slide-left
+layout: section
+---
 # Hooks
 
 <!--
@@ -15,13 +19,12 @@ transition: slide-left
 <br>
 </div>
 
-
 <br>
 <span>
 Hook Rules
 There are 3 rules for hooks:
 
-- Hooks can only be called inside React function components.
+- Hooks can only be called inside react function components.
 - Hooks can only be called at the top level of a component.
 - Hooks cannot be conditional
 
@@ -33,10 +36,11 @@ There are 3 rules for hooks:
 transition: slide-left
 ---
 
-# useState
+## useState
 
 <span>`useState` is a React Hook that lets you add a<span v-mark.highlight.pink="1"> state variable </span> to your component.</span>
 <br>
+
 ```shell
 const [state, setState] = useState(initialState)
 ```
@@ -51,8 +55,8 @@ function MyComponent() {
   const [count, setCount] = useState(0);
   //...
 }
-
 ```
+
 <br>
 <div>
 <span>The convention is to name state variables like<span v-mark.box.yellow="2"> `[something,setSomething]` using array destructuring.</span> </span>
@@ -65,64 +69,76 @@ function MyComponent() {
 </span>
 </div>
 
-
-
 ---
 transition: slide-left
 ---
 
-# useEffect
+## useEffect
 
-React useEffect hook handles the effects of the dependency array. The useEffect Hook allows us to perform side effects on the components. fetching data, directly updating the DOM and timers are some side effects. It is called every time any state if the dependency array is modified or updated
+It is called every time any state if the dependency array is modified or updated
 <br>
+
 ```shell
-useEffect(<FUNCTION>, RETURN , [DEPENDENCY])
+useEffect(setup, dependencies?)
 ```
+
 <br>
-React useEffect Hook ShortHand for:
 
-- FUNCTION: contains the code to be executed when useEffect triggers.
-
-- RETURN: runs one final time after your component is removed (unmounts).
-
-- DEPENDENCY: is an optional parameter, useEffect triggers when the given dependency is changed.
-
----
-transition: slide-left
----
-
-# Example of useEffect
+- `setup`: The function with your Effect’s logic. Your setup function may also optionally return a cleanup function.
+- optional `dependencies`: List of Reactive values include props, state, and all the variables and functions declared directly inside your component body.
+  
+<br>
 
 ```js
+useEffect(() => {
+  const connection = createConnection(serverUrl, roomId);
+  connection.connect();
+  return () => {
+    connection.disconnect();
+  };
+}, [serverUrl, roomId]);
+```
 
-import React, { useState, useEffect } from 'react'
-import { Button } from 'react-native'
+<!--
+useEffect
+-->
 
-export default function App() {
-  const [count, setCount] = useState(0)
+---
+transition: slide-left
+---
+
+### UseEffect example
+
+On each button press we are incrementing the counter and showing its updated value.
+
+```js
+import React, {useState, useEffect} from 'react';
+import {Button} from 'react-native';
+
+export default function StatesDemo() {
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log(count)
-  }, [count])
+    console.log(count);
+  }, [count]);
 
   return (
     <Button
       title={`Increment ${count}`}
       onPress={() => {
-        setCount(count + 1)
-        //  setCount(prevState => prevState + 1) ) //ascynch 
+        // setCount(count + 1);
+        setCount(prevState => prevState + 1); // asynchronous
       }}
     />
-  )
+  );
 }
-
 ```
 
 ---
 transition: slide-left
 ---
 
-# useRef
+## useRef
 
 useRef is a React Hook that lets you reference a value that’s not needed for rendering.
 <br>
@@ -130,9 +146,10 @@ useRef is a React Hook that lets you reference a value that’s not needed for r
 ```shell
 const ref = useRef(initialValue)
 ```
+
 <br>
 
-# useCallback
+## useCallback
 
 useCallback is a React Hook that lets you cache a function definition between re-renders.
 <br>
@@ -140,9 +157,10 @@ useCallback is a React Hook that lets you cache a function definition between re
 ```shell
 const cachedFn = useCallback(fn, dependencies)
 ```
+
 <br>
 
-# useMemo
+## useMemo
 
 useMemo is a React Hook that lets you cache the result of a calculation between re-renders.
 <br>
@@ -150,29 +168,9 @@ useMemo is a React Hook that lets you cache the result of a calculation between 
 ```shell
 const cachedValue = useMemo(calculateValue, dependencies)
 ```
-<br>
 
+<br>
 
 ---
-transition: slide-left
+src: ./advanced.md
 ---
-
-<!-- # useReducer
-
-useReducer is a React Hook that lets you add a reducer to your component.
-<br>
-
-```shell
-const [state, dispatch] = useReducer(reducer, initialArg, init?)
-```
-<br>
-
-# useContext
-
-useContext is a React Hook that lets you read and subscribe to context from your component.
-<br>
-
-```shell
-const value = useContext(SomeContext)
-```
-</br> -->

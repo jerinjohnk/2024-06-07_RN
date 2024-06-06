@@ -1,3 +1,8 @@
+---
+transition: slide-left
+layout: section
+---
+
 # Basic Components
 
 <!--
@@ -188,10 +193,14 @@ transition: slide-left
 
 ## StyleSheet
 
+<br>
+<div>
 A StyleSheet is an abstraction similar to CSS StyleSheets
 
 - By moving styles away from the render function, you're making the code easier to understand.
 - Naming the styles is a good way to add meaning to the low level components in the render function.
+
+</div>
 
 <br>
 
@@ -224,7 +233,5 @@ Component that wraps platform ScrollView while providing integration with touch 
 -->
 
 ---
-transition: slide-left
 src: ./userInterfaces.md
-layout: center
 ---

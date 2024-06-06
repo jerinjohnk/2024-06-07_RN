@@ -1,3 +1,7 @@
+---
+transition: slide-left
+layout: section
+---
 # User Interfaces
 
 <!--
@@ -30,7 +34,7 @@ Supports a minimal level of customization.
 
 <br>
 <span>
-You can build your own button using<span v-mark.highlight.red="1"> Pressable </span>
+You can build your own button using <span v-mark.highlight.red="1">Pressable</span>
 
 </span>
 <br>
@@ -91,7 +95,7 @@ Renders a boolean input.
 transition: slide-left
 ---
 
-# Flatlist
+# FlatList
 
 <br>
 <span>
@@ -112,13 +116,13 @@ A performant interface for rendering basic, flat lists, supporting the most hand
 
 <br>
 
-> Shopify's Flashlist is a fast & performant list
+> Shopify's FlashList is a fast & performant list
 <br>
 
 <!--
 Rendering basic, flat lists
 -->
+
 ---
-transition: slide-left
-src: ./shailAbout.md
+src: ./about/shailesh.md
 ---

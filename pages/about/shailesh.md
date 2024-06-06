@@ -1,4 +1,8 @@
-
+---
+layout: author
+transition: slide-left
+hideInToc: true
+---
 
 ![image of shailesh](/shail.jpeg)
 
@@ -6,13 +10,12 @@
 
 <br>
 <div>
-   I started my career as a Mobile App developer using React Native, and I've cherished every step of this journey. I'm passionate about exploring new technologies, reading, travelling to new places, and staying active through sports.
+   I started my career as a Mobile App developer using React Native, and I've cherished every step of this journey. I'm passionate about exploring new technologies, reading, traveling to new places, and staying active through sports.
   <br>
   <br>
   <!-- If you need me, you'll probably find me toggling between lines of code and lines on a map. -->
   <br>
 
- 
 </div>
 <br>
 
@@ -28,7 +31,5 @@ About myself
 -->
 
 ---
-transition: slide-left
-src: ./flexbox.md
+src: ../flexbox.md
 ---
-

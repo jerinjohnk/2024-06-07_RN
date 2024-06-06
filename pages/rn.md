@@ -1,3 +1,6 @@
+---
+transition: slide-left
+---
 # What is React Native?
 
 <br>
@@ -6,35 +9,12 @@
   <span>React Native is an open source framework for building Android and iOS applications using React and the app platform’s native capabilities.</span>
   <br>
   <br>
-  <span>With React Native, you use<span v-mark.highlight.red="1"> JavaScript </span>to access your <span v-mark.underline.orange="2">platform’s APIs</span> as well as to describe the appearance and behavior of your <span v-mark.underline.orange="3">UI</span> using React components: bundles of reusable, nestable code.
+  <span>With React Native, you use <span v-mark.highlight.red="1">JavaScript</span> to access your <span v-mark.underline.yellow="2">platform’s APIs</span> as well as to describe the appearance and behavior of your <span v-mark.underline.yellow="3">UI</span> using React components: bundles of reusable, nestable code.
   </span>
   </div>
   <div>
   <img src="/diagram_react-native-components_dark.svg" width="400" alt="A diagram showing React Native's Core Components are a subset of React Components that ship with React Native." />
  </div>
-</div>
-
-<!--
-RN components equivalent Android vs iOS vs Web
--->
-
----
-transition: slide-left
----
-
-## Expo
-
-<br>
-<div>
-<span>Expo is a production-grade React Native<span v-mark.highlight.yellow="1"> Framework </span>. Expo provides developer tooling that makes developing apps easier, such as file-based routing, a standard library of native modules, and much more.</span>
-<br>
-<br>
-<span>Expo's Framework is free and open source, with an active community on <a href="https://github.com/expo">GitHub</a> and <a href="https://chat.expo.dev">Discord</a>. The Expo team works in close collaboration with the React Native team at Meta to bring the latest React Native features to the Expo SDK.</span>
-<br>
-<br>
-<span>The team at Expo also provides<span v-mark.circle.blue="2"> Expo Application Services (EAS), </span>an optional set of services that complements Expo, the Framework, in each step of the development process.</span>
-<br>
-<br>
 </div>
 
 <!--
@@ -296,7 +276,5 @@ Here is another comment.
 -->
 
 ---
-transition: slide-left
 src: ./components.md
-layout: center
 ---

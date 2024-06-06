@@ -1,3 +1,7 @@
+---
+transition: slide-left
+layout: section
+---
 # Layout with Flexbox
 
 ---
@@ -19,7 +23,6 @@ We're primarily going to use a combination of <span v-mark.highlight.red="1"> fl
 <!--
 This is to styling our components using flexbox to achieve responsiveness
 -->
-
 
 ---
 transition: slide-left
@@ -54,21 +57,18 @@ export default FlexDemo;
 A basic use of flex:
 -->
 
-
-
 ---
 transition: slide-left
 ---
 
-# Flex Direction  ⬇️ ➡️ ⬆️ ⬅️ 
+## Flex Direction  ⬇️ ➡️ ⬆️ ⬅️
 
 <br>
 <span>
 
-`flexDirection` controls the direction in which the children of a node are laid out. 
+`flexDirection` controls the direction in which the children of a node are laid out.
 
 This is also referred to as the <span v-mark.box.orange="1"> main axis. </span>
-
 
 - `column` <span v-mark.highlight.red="2"> (default value) </span> Aligns children from top to bottom.
 - `row` Aligns children from left to right.
@@ -87,25 +87,23 @@ This is also referred to as the <span v-mark.box.orange="1"> main axis. </span>
 How flexDirection works:
 -->
 
-
 ---
 transition: slide-left
 ---
 
-# Justify Content <carbon-text-align-justify />
+## Justify Content <carbon-text-align-justify />
 
 <br>
 <span>
 
 `justifyContent` describes how to align children within the  <span v-mark.highlight.red="1"> main axis </span> of their container.
 
-
-- `flex-start` (default value) 
+- `flex-start` (default value)
 - `flex-end`
 - `center`
-- `space-between` 
-- `space-around` 
-- `space-evenly` 
+- `space-between`
+- `space-around`
+- `space-evenly`
 
 </span>
 <br>
@@ -121,26 +119,22 @@ transition: slide-left
 - `space-around` Evenly space off children across the container's main axis, distributing the remaining space around the children. 
 - `space-evenly` Evenly distribute children within the alignment container along the main axis.  -->
 
-
-
-
 ---
 transition: slide-left
 ---
 
-# Align Items 🙄
+## Align Items 🙄
 
 <br>
 <span>
 
 `alignItems` describes how to align children along the <span v-mark.highlight.red="1"> cross axis </span> of their container.
 
-
 - `stretch` (default value)  
 - `flex-start`
 - `flex-end`
-- `center` 
-- `baseline` 
+- `center`
+- `baseline`
 
 </span>
 <br>
@@ -161,22 +155,21 @@ center Align children of a container in the center of the container's cross axis
 baseline Align children of a container along a common baseline. Individual children can be set to be the reference baseline for their parents.
  -->
 
-
 ---
 transition: slide-left
 ---
 
-# Align Self 🧐
+## Align Self 🧐
 
 <br>
 
-`alignSelf` has the same options and effect as alignItems but instead of affecting the children within a container, you can apply this property to a single child to change its alignment within its parent. 
+`alignSelf` has the same options and effect as alignItems but instead of affecting the children within a container, you can apply this property to a single child to change its alignment within its parent.
 <br>
 It <span v-mark.highlight.red="1" > overrides any option set by alignItems. </span>
 
 <br>
 
-# Flex Wrap 🎁
+## Flex Wrap 🎁
 
 <br>
 
@@ -184,27 +177,25 @@ The `flexWrap` property is set on containers and it controls what happens when <
 
 <br>
 
-
 ---
 transition: slide-left
 ---
 
-# Flex Basis, Grow, and Shrink 🥱
+## Flex Basis, Grow, and Shrink 🥱
 
 <br>
 
 - `flexBasis` is an axis-independent way of providing the default size of an item along the main axis.
 - `flexGrow` describes how much space within a container should be distributed among its children along the main axis.
-- `flexShrink` describes how to shrink children along the main axis in the case in which the total size of the children overflows the size of the container on the main axis. 
+- `flexShrink` describes how to shrink children along the main axis in the case in which the total size of the children overflows the size of the container on the main axis.
 
 <br>
-
 
 ---
 transition: slide-left
 ---
 
-# Absolute & Relative Layout 😴
+## Absolute & Relative Layout 😴
 
 The position type of an element defines how it is positioned within its parent.
 
@@ -230,3 +221,6 @@ The position type of an element defines how it is positioned within its parent.
 
 <br>
 
+---
+src: ./about/prerna.md
+---

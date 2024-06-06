@@ -20,6 +20,7 @@ transition: slide-left
 # enable MDC Syntax: https://sli.dev/guide/syntax#mdc-syntax
 mdc: true
 hideInToc: true
+favicon: './favicon.ico'
 ---
 
 # Welcome to React Native Workshop
@@ -47,7 +48,6 @@ Title Page
 -->
 
 ---
-layout: two-cols
 layoutClass: gap-16
 hideInToc: true
 ---
@@ -55,7 +55,7 @@ hideInToc: true
 # Table of contents
 
 <Transform :scale="0.8">
-  <Toc minDepth="1" maxDepth="2"></Toc>
+  <Toc minDepth="1" maxDepth="2" columns="2"></Toc>
 </Transform>
 
 <!--
@@ -99,6 +99,5 @@ About myself
 -->
 
 ---
-transition: slide-left
 src: ./pages/rn.md
 ---
