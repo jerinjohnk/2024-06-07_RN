@@ -170,8 +170,48 @@ transition: slide-left
 
 <br>
 
-`alignSelf` has the same options and effect as alignItems but instead of affecting the children within a container, you can apply this property to a single child to change its alignment within its parent. It overrides 
+`alignSelf` has the same options and effect as alignItems but instead of affecting the children within a container, you can apply this property to a single child to change its alignment within its parent. 
+<br>
+It <span v-mark.highlight.red="1" > overrides any option set by alignItems. </span>
 
 <br>
 
-> Info: For `stretch` to have an effect, children must not have a fixed dimension along the secondary axis
+# Flex Wrap 🎁
+
+<br>
+
+The `flexWrap` property is set on containers and it controls what happens when <span v-mark.highlight.red="1"> children overflow </span> the size of the container along the main axis.
+
+<br>
+
+
+---
+transition: slide-left
+---
+
+# Flex Basis, Grow, and Shrink 🥱
+
+<br>
+
+- `flexBasis` is an axis-independent way of providing the default size of an item along the main axis.
+- `flexGrow` describes how much space within a container should be distributed among its children along the main axis.
+- `flexShrink` describes how to shrink children along the main axis in the case in which the total size of the children overflows the size of the container on the main axis. 
+
+<br>
+
+
+---
+transition: slide-left
+---
+
+# Absolute & Relative Layout 😴
+
+The position type of an element defines how it is positioned within its parent.
+
+<br>
+
+- `relative` (default value) element is positioned according to the normal flow of the layout.
+- `absolute` element doesn't take part in the normal layout flow. The position is determined based on the <span v-mark.highlight.red="1"> top, right, bottom, and left </span> values.
+
+<br>
+
