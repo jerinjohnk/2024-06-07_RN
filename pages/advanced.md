@@ -67,3 +67,7 @@ transition: slide-left
 <!--
 RN components equivalent Android vs iOS vs Web
 -->
+
+---
+src: ./nativeModules.md
+---

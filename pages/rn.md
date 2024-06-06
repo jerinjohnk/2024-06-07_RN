@@ -13,7 +13,10 @@ transition: slide-left
   </span>
   </div>
   <div>
-  <img src="/diagram_react-native-components_dark.svg" width="400" alt="A diagram showing React Native's Core Components are a subset of React Components that ship with React Native." />
+  <!-- <img src="/diagram_react-native-components_dark.svg" width="300" alt="A diagram showing React Native's Core Components are a subset of React Components that ship with React Native." /> -->
+  <div>
+    <img src="/rnDeveloper.jpeg" width="300" alt="A diagram showing React Native's Core Components are a subset of React Components that ship with React Native." />
+  </div>
  </div>
 </div>
 
