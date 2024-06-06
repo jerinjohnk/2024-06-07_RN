@@ -118,3 +118,7 @@ A performant interface for rendering basic, flat lists, supporting the most hand
 <!--
 Rendering basic, flat lists
 -->
+---
+transition: slide-left
+src: ./flexbox.md
+---
