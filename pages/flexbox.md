@@ -215,3 +215,18 @@ The position type of an element defines how it is positioned within its parent.
 
 <br>
 
+```js
+  <View
+    style={{
+      width: 50,
+      height: 50,
+      top: 50,
+      left: 50,
+      position: 'absolute',
+      backgroundColor: 'skyblue',
+    }}
+  />
+```
+
+<br>
+
