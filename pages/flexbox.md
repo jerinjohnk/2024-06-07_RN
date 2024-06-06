@@ -133,7 +133,7 @@ transition: slide-left
 <br>
 <span>
 
-`alignItems` describes how to align children along the cross axis of their container.
+`alignItems` describes how to align children along the <span v-mark.highlight.red="1"> cross axis </span> of their container.
 
 
 - `stretch` (default value)  
@@ -180,7 +180,7 @@ It <span v-mark.highlight.red="1" > overrides any option set by alignItems. </sp
 
 <br>
 
-The `flexWrap` property is set on containers and it controls what happens when <span v-mark.highlight.red="1"> children overflow </span> the size of the container along the main axis.
+The `flexWrap` property is set on containers and it controls what happens when <span v-mark.highlight.red="2"> children overflow </span> the size of the container along the main axis.
 
 <br>
 
