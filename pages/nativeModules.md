@@ -22,13 +22,5 @@ Native Modules
 -->
 
 ---
-transition: slide-left
-layout: section
-hideInToc: true
+src: ./thankyou.md
 ---
-
-# Thank You
-
-<!--
-Thank you
--->
