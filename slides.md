@@ -32,14 +32,14 @@ Learn to build mobile application using react native.
     hover="bg-white bg-opacity-10">
     Speakers <carbon:bullhorn class="inline"/>
   </span>
- <span class="px-2 py-1 rounded">
-    Jerin
+ <span class="px-2 py-1 rounded bg-white bg-opacity-10">
+    Jerin John K
   </span>
-  <span class="px-2 py-1 rounded">
-    Shailesh
+  <span class="px-2 py-1 rounded bg-white bg-opacity-10">
+    Shailesh Yadav
   </span>
-  <span class="px-2 py-1 rounded">
-    Prerna
+  <span class="px-2 py-1 rounded bg-white bg-opacity-10">
+    Prerna Nagar
   </span>
 </div>
 
@@ -54,7 +54,7 @@ hideInToc: true
 
 # Table of contents
 
-<Transform :scale="0.8">
+<Transform :scale="0.7">
   <Toc minDepth="1" maxDepth="2" columns="2"></Toc>
 </Transform>
 
