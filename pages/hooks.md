@@ -41,14 +41,14 @@ transition: slide-left
 <span>`useState` is a React Hook that lets you add a<span v-mark.highlight.pink="1"> state variable </span> to your component.</span>
 <br>
 
-```shell
+```tsx
 const [state, setState] = useState(initialState)
 ```
 
 Call useState at the top level of your component to declare one or more state variables.
 <br>
 
-```js
+```tsx
 import { useState } from 'react';
 
 function MyComponent() {
@@ -78,7 +78,7 @@ transition: slide-left
 It is called every time any state if the dependency array is modified or updated
 <br>
 
-```shell
+```tsx
 useEffect(setup, dependencies?)
 ```
 
@@ -143,7 +143,7 @@ transition: slide-left
 useRef is a React Hook that lets you reference a value that’s not needed for rendering.
 <br>
 
-```shell
+```tsx
 const ref = useRef(initialValue)
 ```
 
@@ -154,7 +154,7 @@ const ref = useRef(initialValue)
 useCallback is a React Hook that lets you cache a function definition between re-renders.
 <br>
 
-```shell
+```tsx
 const cachedFn = useCallback(fn, dependencies)
 ```
 
@@ -165,8 +165,11 @@ const cachedFn = useCallback(fn, dependencies)
 useMemo is a React Hook that lets you cache the result of a calculation between re-renders.
 <br>
 
-```shell
-const cachedValue = useMemo(calculateValue, dependencies)
+```tsx
+const cachedValue = useMemo(() => {
+  // .. large calculation
+  return calculatedValue;
+}, dependencies)
 ```
 
 <br>

@@ -2,7 +2,25 @@
 transition: slide-left
 ---
 
-# Redux toolkit
+# Storage and State Managers
+
+## Async Storage
+
+To store string data locally on device.
+
+```shell
+npm install @react-native-async-storage/async-storage
+
+```
+
+<br>
+
+> react-native-mmkv-storage is a lightweight and faster alternative
+
+<br>
+<br>
+
+## Redux toolkit
 
 <div>
 
@@ -17,24 +35,12 @@ npm install redux
 
 > Zustand and Jotai are a great alternative to redux to reduce boilerplate code.
 
-<br>
-<br>
-
-# Async Storage
-
-To store string data locally on device.
-
-```shell
-npm install @react-native-async-storage/async-storage
-
-```
-
-<br>
-
-> react-native-mmkv-storage is a lightweight and faster alternative
-
 </div>
 
 <!--
 Redux toolkit
 -->
+
+---
+src: ./advanced.md
+---

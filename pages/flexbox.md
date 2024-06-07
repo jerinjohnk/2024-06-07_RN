@@ -181,20 +181,6 @@ The `flexWrap` property is set on containers and it controls what happens when <
 transition: slide-left
 ---
 
-## Flex Basis, Grow, and Shrink 🥱
-
-<br>
-
-- `flexBasis` is an axis-independent way of providing the default size of an item along the main axis.
-- `flexGrow` describes how much space within a container should be distributed among its children along the main axis.
-- `flexShrink` describes how to shrink children along the main axis in the case in which the total size of the children overflows the size of the container on the main axis.
-
-<br>
-
----
-transition: slide-left
----
-
 ## Absolute & Relative Layout 😴
 
 The position type of an element defines how it is positioned within its parent.
@@ -222,5 +208,7 @@ The position type of an element defines how it is positioned within its parent.
 <br>
 
 ---
-src: ./about/prerna.md
+transition: slide-left
+src: ./hooks.md
+layout: center
 ---

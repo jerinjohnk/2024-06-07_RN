@@ -31,5 +31,5 @@ Animations
 -->
 
 ---
-src: ./advanced.md
+src: ./stateManagers.md
 ---

@@ -14,13 +14,21 @@ The NativeModule system exposes instances of Java/Objective-C/C++ (native) class
 - Directly within your React Native application's iOS/Android projects
 - As a NPM package that can be installed as a dependency by your/other React Native applications.
 
-</div>
 <br>
+</div>
 
 <!--
 Native Modules
 -->
 
 ---
-src: ./stateManagers.md
+transition: slide-left
+layout: section
+hideInToc: true
 ---
+
+# Thank You
+
+<!--
+Thank you
+-->

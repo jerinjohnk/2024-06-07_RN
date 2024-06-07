@@ -7,7 +7,7 @@ theme: dracula
 # some information about your slides, markdown enabled
 title: Welcome to React Native Workshop
 info: |
-  Presentation slides for developers.
+  Learn to build Mobile Applications using React Native
 # apply any unocss classes to the current slide
 class: text-center
 # https://sli.dev/custom/highlighters.html
@@ -60,42 +60,6 @@ hideInToc: true
 
 <!--
 Table of contents
--->
-
----
-layout: author
-hideInToc: true
----
-
-![image of jerinjohnk](/jerin-github.jpeg)
-
-# Jerin John K
-<br>
-
-<div v-click.hide="1">
-  I started as a C# developer working on Windows Apps while dabbling in
-  Xamarin.<br>
-  Followed by iOS app development in ObjC and Swift before setting down for
-  React Native development.<br>
-  Currently working on Policybazaar mobile app
-</div>
-<div v-click="1">
-  I like to keep myself updated with the latest trends in Tech.<br>
-  Talk about a guilty pleasure – I enjoy reading user reviews for apps developed by me.
-  <br>
-  Hobbies: watching anime and playing games.
-</div>
-
-<footer>
-
-  <carbon-logo-x />[jerinjohnk](https://x.com/jerinjohnk)
-  <carbon-logo-linkedin />[jerinjohnk](https://www.linkedin.com/in/jerinjohnk/)
-  <carbon-logo-medium />[jerinjohnk](https://medium.com/@jerinjohnk)
-
-</footer>
-
-<!--
-About myself
 -->
 
 ---
